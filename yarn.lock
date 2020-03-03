@@ -4318,7 +4318,6 @@ fsevents@^1.2.7:
   dependencies:
     bindings "^1.5.0"
     nan "^2.12.1"
-    node-pre-gyp "*"
 
 fstream@^1.0.0, fstream@^1.0.12:
   version "1.0.12"
@@ -6152,6 +6151,13 @@ markdown-table@^1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.3.tgz#9fcb69bcfdb8717bfd0398c6ec2d93036ef8de60"
   integrity sha512-1RUZVgQlpJSPWYbFSpmudq5nHY1doEIv89gBtF0s4gW1GF2XorxcA/70M5vq7rLv0a6mhOUccRsqkwhwLCIQ2Q==
+
+marx-css@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/marx-css/-/marx-css-3.0.7.tgz#aba251526b5ba037cfd861282cd9e406215d8bbf"
+  integrity sha512-UAOus6LS/ryAMvufQueecl0Z9kJ5BoVWx0eE1u9xMAe+95aT8MuceB9ygp+Xfq15OrSIMYUnVZa5U/g+TAOBRQ==
+  dependencies:
+    sanitize.css "^8.0.0"
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -9498,6 +9504,11 @@ sanitize-filename@^1.6.1:
   integrity sha512-y/52Mcy7aw3gRm7IrcGDFx/bCk4AhRh2eI9luHOQM86nZsqwiRkkq2GekHXBBD+SmPidc8i2PqtYZl+pWJ8Oeg==
   dependencies:
     truncate-utf8-bytes "^1.0.0"
+
+sanitize.css@^8.0.0:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-8.0.1.tgz#bd38f9752b0972849d2de260daeaa99878fd349e"
+  integrity sha512-5Gsh+BmqyhixJIh68mpP1NkiiKNTeQi9WPQvdVPxfcFIkiuXKcDkKHhYekxheK45KI52bIUC/FXK8R5HGOza5Q==
 
 sass-graph@^2.2.4:
   version "2.2.4"

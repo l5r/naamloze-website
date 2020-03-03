@@ -1,0 +1,75 @@
+@import 'marx-css/scss/marx.scss';
+
+$u: 1rem;
+$shadow-color: #888;
+$border-color: black;
+$max-content-width: 60rem;
+$page-color: white;
+
+body {
+	@media(min-width: 650px) {
+		font-size: 20px;
+	}
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: stretch;
+}
+
+nav {
+	display: flex;
+	position: sticky;
+	max-width: 100%;
+	width: $max-content-width;
+	min-width: 0;
+	align-self: center;
+	top: 0;
+	margin: $u;
+	padding: $u;
+	border-bottom: $u solid $border-color;
+	background: $page-color;
+	a {
+		font-stretch: 2;
+		font-weight: bold;
+		color: black;
+	}
+	.home {
+		font-size: 2rem;
+	}
+}
+
+$hero-break: 650px;
+
+.hero {
+	max-width: $max-content-width;
+	margin: $u * 2 auto;
+	padding: 0 $u;
+	display: flex;
+	flex-flow: column;
+	@media(min-width: $hero-break) {
+		flex-flow: row;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	h1, div {
+		flex: 1;
+		@media(min-width: $hero-break) {
+			min-width: 25rem;
+		}
+		margin: 2 * $u;
+	}
+	h1 {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 4 * $u;
+		@media(max-width: $hero-break) {
+			font-size: 2 * $u;
+		}
+		text-align: right;
+	}
+	min-height: 10 * $u;
+}
+
+main {
+	max-width: $max-content-width;
+	text-align: justify;
+}

@@ -1,8 +1,8 @@
 {
-  "name": "victor-hugo",
-  "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
-  "repository": "netlify/victor-hugo",
+  "name": "naamloze-website",
+  "version": "0.1.0",
+  "description": "Website based on Victor Hugo.",
+  "repository": "l5r/naamloze-website",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
@@ -65,5 +65,8 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "marx-css": "^3.0.7"
   }
 }
