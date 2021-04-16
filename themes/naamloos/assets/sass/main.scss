@@ -18,8 +18,16 @@ body {
 }
 
 
-main {
+main, footer {
   max-width: $max-content-width;
   text-align: justify;
   padding: 0 $unit;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 2*$unit;
+  border-top: $unit/8 solid $border-color;
+  padding-top: $unit;
 }
