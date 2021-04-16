@@ -1,7 +1,9 @@
 ---
-title: 'Home'
+title: Home
 layout: home
 translationKey: home
+date: 2021-04-16T14:18:34.800Z
+description: Welcome to the nameless website. This is my personal webite.
 ---
 
 Welcome to the nameless website. This is my personal webite.
