@@ -1,0 +1,40 @@
+<nav>
+
+  <!-- Home -->
+  <a href="{{ .Site.Home.Permalink }}" class="home">
+    NW
+  </a>
+
+  <!-- Primary Nav -->
+  <ul class="nav">
+
+  {{ if .IsTranslated }}
+  <details>
+    <summary>
+      {{ .Language.LanguageName }}
+    </summary>
+    <ul>
+
+      {{ range .Translations }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </details>
+  {{ else }}
+  <details>
+    <summary>
+      {{ $.Site.Home.Language.LanguageName }}
+    </summary>
+    <ul>
+      {{ range $.Site.Home.Translations }}
+      <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+      {{ end }}
+    </ul>
+  </details>
+  {{ end }}
+
+  </ul>
+</nav>
+

@@ -1,0 +1,35 @@
+
+@import 'variables.scss';
+
+//$hero-break: 650px;
+$hero-break: 10rem;
+
+.hero {
+  max-width: $max-content-width;
+  margin: $unit * 2 auto;
+  padding: 0 $unit;
+  display: flex;
+  flex-flow: column;
+  @media(min-width: $hero-break) {
+    flex-flow: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  h1, div {
+    flex: 1;
+    @media(min-width: $hero-break) {
+      min-width: 25rem;
+    }
+    margin: 2 * $unit;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4 * $unit;
+    @media(max-width: $hero-break) {
+      font-size: 2 * $unit;
+    }
+    text-align: right;
+  }
+  min-height: 10 * $unit;
+}

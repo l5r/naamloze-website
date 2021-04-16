@@ -1,0 +1,51 @@
+@import 'variables.scss';
+
+nav {
+  display: grid;
+  grid-template-columns: min-content auto max-content;
+  align-items: end;
+
+  position: sticky;
+  max-width: 100%;
+  width: $max-content-width;
+  min-width: 0;
+  top: 0;
+ margin: $unit;
+  padding: $unit;
+  border-bottom: $unit solid $border-color;
+  background: $page-color;
+  a {
+    font-stretch: 2;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  .home {
+    grid-column: 1/2;
+    font-size: 2rem;
+  }
+  ul.nav {
+    grid-column: 3/4;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  details {
+    position: relative;
+    summary {
+      margin: -$unit/2;
+      padding: $unit/2;
+    }
+    > ul {
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      border: $unit/4 solid $border-color;
+      padding: $unit/2;
+      margin-top: $unit/2;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+
+@import 'variables.scss';
+@import 'typography.scss';
+@import 'nav.scss';
+@import 'hero.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  place-items: center;
+}
+
+
+main {
+  max-width: $max-content-width;
+  text-align: justify;
+  padding: 0 $unit;
+}

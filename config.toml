@@ -1,0 +1,25 @@
+baseURL = "http://naamloze.website"
+defaultContentLanguage = "nl"
+
+theme = ["naamloos"]
+
+[params]
+  images = ["img/logo.svg"]
+
+[languages]
+  [languages.nl]
+    languageName = "NL"
+    title = "Naamloze Website"
+    weight = 1
+    [languages.nl.params]
+      description = "De website zonder naam. Persoonlijke website van Leander Lismond."
+      subtitle = "Voor naamloze inhoud."
+      subtitleExtra = "En naamloze mensen."
+  [languages.en]
+    languageName = "EN"
+    title = "Nameless Website"
+    weight = 2
+    [languages.en.params]
+      description = "The website without a name. Personal website of Leander Lismond."
+      subtitle = "For nameless content"
+      subtitleExtra = "And nameless people."

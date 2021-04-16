@@ -1,0 +1,15 @@
+{{ define "header" }}
+<div class="hero">
+  <h1>{{ .Site.Title }}</h1>
+  <div>
+    <h2>{{ .Site.Params.subtitle }}</h2>
+    <p>
+      {{ .Site.Params.subtitleExtra }}
+    </p>
+  </div>
+</div>
+{{ partial "nav" . }}
+{{ end }}
+{{ define "main" }}
+{{ .Content }}
+{{ end }}
