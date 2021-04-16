@@ -1,5 +1,5 @@
 ---
-Title: 'Voorpagina'
+title: 'Voorpagina'
 layout: home
 translationKey: home
 ---
