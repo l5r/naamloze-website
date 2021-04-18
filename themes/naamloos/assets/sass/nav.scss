@@ -26,6 +26,14 @@ nav {
   }
   ul.nav {
     grid-column: 3/4;
+    display: flex;
+    flex-direction: row;
+    > li {
+      &::after {
+        content: '|';
+        margin: $unit;
+      }
+    }
   }
 
   li {

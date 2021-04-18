@@ -8,6 +8,10 @@
   <!-- Primary Nav -->
   <ul class="nav">
 
+    {{ range .Site.Menus.top }}
+    <li><a href="{{.URL | relLangURL }}">{{ .Name }}</a></li>
+    {{ end }}
+
   {{ if .IsTranslated }}
   <details>
     <summary>

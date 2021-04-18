@@ -1,0 +1,4 @@
+error404:
+  other: "You took a wrong turn there."
+go_home:
+  other: "Take me home →"
